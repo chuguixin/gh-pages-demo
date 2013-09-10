@@ -1,5 +1,5 @@
-source:      .     #Change the directory where Jekyll will read files
-destination: ./_site
+source:      .     #jekyll 
+destination: ./_site  #directory where Jekyll will write files
 plugins:     ./_plugins
 layouts:     ./_layouts
 include:     ['.htaccess']
@@ -24,9 +24,7 @@ textile_ext:   textile
 excerpt_separator: "\n\n"
 
 safe:        false
-watch:       false    # deprecated
-server:      false    # deprecated
-host:        0.0.0.0
+#host:        0.0.0.0
 port:        4000
 baseurl:     /
 url:         http://localhost:4000
