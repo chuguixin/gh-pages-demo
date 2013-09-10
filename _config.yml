@@ -1,11 +1,12 @@
-source:      .     #jekyll 
-destination: ./_site  #directory where Jekyll will write files
-plugins:     ./_plugins
-layouts:     ./_layouts
-include:     ['.htaccess']
-exclude:     []
+#此文件中不允许使用tab
+source:      . #源文件的根目录 jekyll读取
+destination: ./_site #jekyll生成静态文件的目录
+plugins:     ./_plugins #
+layouts:     ./_layouts #布局
+include:     ['.htaccess'] #包含的文件或者目录
+exclude:     [] #排除在外的目录或者文件 即不需要进行转换的目录和文件
 keep_files:  ['.git','.svn']
-timezone:    nil
+timezone:    nil #时区
 
 future:      true
 show_drafts: nil
@@ -26,9 +27,9 @@ excerpt_separator: "\n\n"
 safe:        false
 #host:        0.0.0.0
 port:        4000
-baseurl:     /
+baseurl:     /  #配置指定的url在服务器上运行站点
 url:         http://localhost:4000
-lsi:         false
+lsi:         false #发布相关的文章
 
 maruku:
   use_tex:    false
