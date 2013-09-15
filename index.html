@@ -10,8 +10,23 @@ layout: default   #Layout files must be placed in the _layouts directory
   <a href="http://weibo.com/309506543">I am here !</a>
   </h2>
   {{ site.posts }}
+  <!--site.posts按时间逆序-->
 </section>
-
+<div>
+	<ul>
+	{% for tag in site.tags %}
+		<li>
+			{{ tag[0] }}<sub>{{tag[1].size}}</sub>
+			<!--{{tag}} + {{tag[1]}} | {{tag[2]}}-->
+		</li>
+	{% endfor %}
+	</ul>
+	<!--
+		tag[2] has nothing
+		there must be an space after tags in Front-matter
+		{{tag}} is the same as {{teg[0]}}{{tag[1]}}
+	-->
+</div>
 <!--
  #   _config.yml Jekyll的配置文件
  #   _includes include引入文件所在的文件夹
