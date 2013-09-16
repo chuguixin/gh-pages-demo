@@ -7,6 +7,7 @@ include:     ['.htaccess'] #包含的文件或者目录
 exclude:     [] #排除在外的目录或者文件 即不需要进行转换的目录和文件
 keep_files:  ['.git','.svn']
 timezone:    nil #时区
+paginate: 5
 
 safe:        false
 #host:        0.0.0.0
